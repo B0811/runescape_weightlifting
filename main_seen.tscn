@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://ci8m02am2hp3k"]
 
 [ext_resource type="Script" path="res://main_seen.gd" id="1_3v456"]
-[ext_resource type="FontFile" uid="uid://dvjqwornpjr2w" path="res://Being Boring.ttf" id="2_0o1uy"]
-[ext_resource type="Texture2D" uid="uid://cjlkwcl0ojxe5" path="res://pixil-frame-0_23.png" id="3_pfu30"]
-[ext_resource type="Texture2D" uid="uid://78o68bmhi53g" path="res://pixil-frame-0 (62).png" id="4_23tpx"]
-[ext_resource type="Texture2D" uid="uid://ddniugbc0gaqc" path="res://squartmaybe.png" id="5_lv55n"]
+[ext_resource type="FontFile" path="res://Being Boring.ttf" id="2_0o1uy"]
+[ext_resource type="Texture2D" path="res://pixil-frame-0_23.png" id="3_pfu30"]
+[ext_resource type="Texture2D" path="res://pixil-frame-0 (62).png" id="4_23tpx"]
+[ext_resource type="Texture2D" path="res://squartmaybe.png" id="5_lv55n"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8acpf"]
 font = ExtResource("2_0o1uy")
@@ -57,7 +57,7 @@ position = Vector2(65, 262)
 scale = Vector2(2.3125, 2.3125)
 texture = ExtResource("3_pfu30")
 
-[node name="Button" type="Button" parent="."]
+[node name="ovarheed" type="Button" parent="."]
 offset_left = 12.0
 offset_top = 215.0
 offset_right = 611.0
@@ -90,7 +90,7 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_4khog")
 value = 30.0
 show_percentage = false
 
-[node name="Button2" type="Button" parent="."]
+[node name="binch" type="Button" parent="."]
 offset_left = 13.0
 offset_top = 330.0
 offset_right = 611.0
@@ -113,9 +113,13 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_4khog")
 value = 78.0
 show_percentage = false
 
-[node name="Button3" type="Button" parent="."]
+[node name="squart" type="Button" parent="."]
 offset_left = 13.0
 offset_top = 439.0
 offset_right = 611.0
 offset_bottom = 535.0
 flat = true
+
+[connection signal="pressed" from="ovarheed" to="." method="_on_ovarheed_pressed"]
+[connection signal="pressed" from="binch" to="." method="_on_binch_pressed"]
+[connection signal="pressed" from="squart" to="." method="_on_squart_pressed"]
