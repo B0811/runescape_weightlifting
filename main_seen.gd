@@ -15,7 +15,7 @@ extends Node2D
 
 
 func _on_overhead_pressed():
-	pass # Replace with function body.
+	print("no pain")
 
 
 func _on_bench_pressed():
