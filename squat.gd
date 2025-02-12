@@ -24,6 +24,7 @@ func _on_log_it_pressed():
 	
 	Global.squatbarxp += squatXP
 	squatbar.value += squatXP
+	Global.squatbarxphold += squatXP
 	squatXP = 0
 	#Global.benchbarxp = benchbar.value
 	Global.squatbarmaxvalue = squatbar.max_value
