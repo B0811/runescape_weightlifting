@@ -25,4 +25,4 @@ func _on_bench_pressed():
 
 
 func _on_squat_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://squat.tscn")
