@@ -11,7 +11,9 @@ extends Node2D
 
 
 
-
+func _ready():
+	benchbar.max_value = Global.benchbarmaxvalue
+	benchbar.value = Global.benchbarvalue
 
 
 func _on_overhead_pressed():
@@ -19,7 +21,7 @@ func _on_overhead_pressed():
 
 
 func _on_bench_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://benchpress.tscn")
 
 
 func _on_squat_pressed():
