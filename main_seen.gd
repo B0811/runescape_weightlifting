@@ -14,6 +14,8 @@ extends Node2D
 func _ready():
 	benchbar.max_value = Global.benchbarmaxvalue
 	benchbar.value = Global.benchbarvalue
+	squatbar.max_value = Global.squatbarmaxvalue
+	squatbar.value = Global.squatbarvalue
 
 
 func _on_overhead_pressed():
