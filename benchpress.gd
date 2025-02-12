@@ -25,6 +25,7 @@ func _on_log_it_pressed():
 	print(benchXP)
 	Global.benchbarxp += benchXP
 	benchbar.value += benchXP
+	Global.benchbarxphold += benchXP
 	benchXP = 0
 	#Global.benchbarxp = benchbar.value
 	Global.benchbarmaxvalue = benchbar.max_value
