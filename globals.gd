@@ -10,5 +10,10 @@ var squatbarvalue = 0
 var squatbarmaxvalue = 100
 var squatbarxp = 0
 
+var overheadlevel = 0
+var overheadbarvalue = 0
+var overheadbarmaxvalue = 100
+var overheadbarxp = 0
+
 func xpmultiplier(a: float, b: float, c: float):
 	return a * b * c / 10
