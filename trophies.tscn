@@ -1,0 +1,540 @@
+[gd_scene load_steps=9 format=3 uid="uid://cl2a3re7tmavk"]
+
+[ext_resource type="Script" path="res://trophies.gd" id="1_30u1w"]
+[ext_resource type="FontFile" uid="uid://dvjqwornpjr2w" path="res://Being Boring.ttf" id="1_b74ui"]
+[ext_resource type="PackedScene" uid="uid://dlei4yvuadd0d" path="res://pagenavbuttons.tscn" id="2_2mjih"]
+[ext_resource type="Texture2D" uid="uid://bnaupoxhk6xy1" path="res://pixil-frame-0 (67).png" id="3_tsadb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0ceqh"]
+font = ExtResource("1_b74ui")
+font_size = 65
+outline_size = 20
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_6kbpr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3s66r"]
+bg_color = Color(0.266667, 0, 0.505882, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+corner_detail = 20
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_wtpop"]
+font = ExtResource("1_b74ui")
+font_size = 11
+font_color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_30u1w")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -19.0
+offset_top = -17.0
+offset_right = 660.0
+offset_bottom = 1168.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -14.0
+offset_top = -7.0
+offset_right = 669.0
+offset_bottom = 154.0
+color = Color(0.235294, 0, 0.447059, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = -17.0
+offset_top = 1037.0
+offset_right = 666.0
+offset_bottom = 1158.0
+color = Color(0.235294, 0, 0.447059, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -1.0
+offset_top = 20.0
+offset_right = 646.0
+offset_bottom = 123.0
+text = "Trophies"
+label_settings = SubResource("LabelSettings_0ceqh")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 52.0
+offset_top = 199.0
+offset_right = 605.0
+offset_bottom = 1028.0
+
+[node name="GridContainer" type="GridContainer" parent="Control"]
+layout_mode = 0
+offset_left = 7.0
+offset_right = 273.0
+offset_bottom = 371.0
+scale = Vector2(2, 2)
+theme_override_constants/h_separation = 44
+theme_override_constants/v_separation = 35
+columns = 4
+
+[node name="Button" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button"]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 39.5
+offset_right = 48.0
+offset_bottom = 49.5
+text = "10K Total XP"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button2"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "100K Total XP"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button3" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button3"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "1M Total XP"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button4" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button4"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button5" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button5"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button6" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button6"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button7" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button7"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button8" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button8"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button9" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button9"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button10" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button10"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button11" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button11"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button12" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button12"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button13" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button13"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button14" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button14"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button15" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button15"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button16" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button16"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button17" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button17"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button18" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button18"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button19" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button19"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button20" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button20"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button21" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button21"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button22" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button22"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button23" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button23"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button24" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6kbpr")
+theme_override_colors/icon_normal_color = Color(0.990537, 0.792444, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s66r")
+icon = ExtResource("3_tsadb")
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Control/GridContainer/Button24"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 40.0
+offset_right = 54.0
+offset_bottom = 50.0
+text = "Coming soon"
+label_settings = SubResource("LabelSettings_wtpop")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Node2D" parent="." instance=ExtResource("2_2mjih")]
