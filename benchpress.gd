@@ -49,7 +49,9 @@ func _on_sets_value_changed(value):
 
 func _on_progress_bar_3_value_changed(value):
 	if benchbar.value == Global.benchbarmaxvalue:
-		benchbar.value = 0 + (Global.benchbarmaxvalue - Global.benchbarvalue)
+		benchbar.value = benchXPhold - (Global.benchbarmaxvalue - Global.benchbarvalue)
+		print(benchXPhold)
+		print(benchbar.value)
 		Global.benchbarvalue - benchbar.value
 		benchbar.max_value = benchbar.max_value * 1.25
 		Global.benchlevel += 1

@@ -4,7 +4,7 @@
 [ext_resource type="FontFile" uid="uid://dvjqwornpjr2w" path="res://Being Boring.ttf" id="2_0o1uy"]
 [ext_resource type="Texture2D" uid="uid://cjlkwcl0ojxe5" path="res://pixil-frame-0_23.png" id="3_pfu30"]
 [ext_resource type="Texture2D" uid="uid://78o68bmhi53g" path="res://pixil-frame-0 (62).png" id="4_23tpx"]
-[ext_resource type="Texture2D" uid="uid://dgqdrm4gnkqel" path="res://pixil-frame-0_2.png" id="5_t6shi"]
+[ext_resource type="Texture2D" path="res://pixil-frame-0_2.png" id="5_t6shi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8acpf"]
 font = ExtResource("2_0o1uy")

@@ -8,6 +8,8 @@ extends Node2D
 @onready var squatbar = $ProgressBar3
 
 var squatXP = 0
+var squatxphold = 0
+
 
 func _ready():
 	weight = 135
@@ -21,7 +23,7 @@ func _process(_delta):
 
 func _on_log_it_pressed():
 	squatXP += Global.xpmultiplier(weight, reps, sets)
-	
+	squatxphold = squatXP
 	Global.squatbarxp += squatXP
 	squatbar.value += squatXP
 	Global.squatbarxphold += squatXP
@@ -48,7 +50,7 @@ func _on_sets_value_changed(value):
 
 func _on_progress_bar_3_value_changed(value):
 	if squatbar.value == Global.squatbarmaxvalue:
-		squatbar.value = 0 + (Global.squatbarmaxvalue - Global.squatbarvalue)
+		squatbar.value = squatxphold - (Global.squatbarmaxvalue - Global.squatbarvalue)
 		Global.squatbarvalue - squatbar.value
 		squatbar.max_value = squatbar.max_value * 1.25
 		Global.squatlevel += 1
